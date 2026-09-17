@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Remix Đại Tiệc Âm Dương",
+  "description": "Đại Tiệc Âm Dương – Đêm Kinh Dị Dân Gian Việt Nam. Trải nghiệm giao thoa văn hóa điện ảnh giữa Halloween phương Tây và tín ngưỡng dân gian Việt Nam.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
