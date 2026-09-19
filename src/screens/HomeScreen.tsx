@@ -101,13 +101,29 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onNavigate }) => {
         <div className="relative z-10 max-w-4xl mx-auto text-center space-y-8 py-6">
           {/* LOGO CHÍNH TÂM HERO - NGUYÊN BẢN GỐC KHÔNG CROP KHÔNG MÉO */}
           <div className="flex flex-col items-center justify-center space-y-4">
-            <div className="relative flex items-center justify-center">
+            <div
+              className="relative flex items-center justify-center rounded-full"
+              style={{
+                boxShadow:
+                  '0 0 22px 2px rgba(201, 162, 74, 0.42), 0 0 48px 10px rgba(201, 162, 74, 0.22), 0 0 85px 22px rgba(201, 162, 74, 0.12), 0 0 120px 35px rgba(90, 11, 16, 0.25)'
+              }}
+            >
+              {/* Lớp ánh sáng vàng kim huyền ảo lan tỏa từ phía sau logo */}
+              <div
+                className="absolute -inset-4 sm:-inset-6 md:-inset-8 rounded-full pointer-events-none -z-10 opacity-75"
+                style={{
+                  background:
+                    'radial-gradient(circle, rgba(201, 162, 74, 0.24) 20%, rgba(201, 162, 74, 0.08) 60%, rgba(90, 11, 16, 0.06) 80%, transparent 100%)',
+                  filter: 'blur(16px)'
+                }}
+              />
+
               <img
                 id="hero-logo-image"
                 src={logoSrc}
                 alt="Đại Tiệc Âm Dương - Giao Thoa Hai Cõi"
                 referrerPolicy="no-referrer"
-                className="w-52 h-52 sm:w-60 sm:h-60 md:w-68 md:h-68 lg:w-76 lg:h-76 max-w-full aspect-square object-contain rounded-full mx-auto drop-shadow-[0_15px_35px_rgba(0,0,0,0.85)] select-none transition-transform duration-500 hover:scale-105"
+                className="relative z-10 w-52 h-52 sm:w-60 sm:h-60 md:w-68 md:h-68 lg:w-76 lg:h-76 max-w-full aspect-square object-contain rounded-full mx-auto drop-shadow-[0_0_18px_rgba(201,162,74,0.32)] drop-shadow-[0_15px_35px_rgba(0,0,0,0.85)] select-none transition-transform duration-500 hover:scale-105"
               />
             </div>
 
