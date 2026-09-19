@@ -98,23 +98,23 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onNavigate }) => {
         <AntiqueCorner position="bottom-left" size={24} />
         <AntiqueCorner position="bottom-right" size={24} />
 
-        <div className="relative z-10 max-w-4xl mx-auto text-center space-y-8 py-6">
+        <div className="relative z-10 max-w-4xl mx-auto text-center space-y-6 sm:space-y-8 py-4 sm:py-6">
           {/* LOGO CHÍNH TÂM HERO - NGUYÊN BẢN GỐC KHÔNG CROP KHÔNG MÉO */}
-          <div className="flex flex-col items-center justify-center space-y-4">
+          <div className="flex flex-col items-center justify-center space-y-3 sm:space-y-4">
             <div
-              className="relative flex items-center justify-center rounded-full"
+              className="relative flex items-center justify-center rounded-full shrink-0"
               style={{
                 boxShadow:
-                  '0 0 22px 2px rgba(201, 162, 74, 0.42), 0 0 48px 10px rgba(201, 162, 74, 0.22), 0 0 85px 22px rgba(201, 162, 74, 0.12), 0 0 120px 35px rgba(90, 11, 16, 0.25)'
+                  '0 0 16px 2px rgba(201, 162, 74, 0.45), 0 0 32px 5px rgba(201, 162, 74, 0.22), 0 0 48px 10px rgba(201, 162, 74, 0.10)'
               }}
             >
               {/* Lớp ánh sáng vàng kim huyền ảo lan tỏa từ phía sau logo */}
               <div
-                className="absolute -inset-4 sm:-inset-6 md:-inset-8 rounded-full pointer-events-none -z-10 opacity-75"
+                className="absolute -inset-2 sm:-inset-4 rounded-full pointer-events-none -z-10 opacity-70"
                 style={{
                   background:
-                    'radial-gradient(circle, rgba(201, 162, 74, 0.24) 20%, rgba(201, 162, 74, 0.08) 60%, rgba(90, 11, 16, 0.06) 80%, transparent 100%)',
-                  filter: 'blur(16px)'
+                    'radial-gradient(circle, rgba(201, 162, 74, 0.28) 0%, rgba(201, 162, 74, 0.12) 65%, rgba(90, 11, 16, 0.08) 85%, transparent 100%)',
+                  filter: 'blur(12px)'
                 }}
               />
 
@@ -123,7 +123,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onNavigate }) => {
                 src={logoSrc}
                 alt="Đại Tiệc Âm Dương - Giao Thoa Hai Cõi"
                 referrerPolicy="no-referrer"
-                className="relative z-10 w-52 h-52 sm:w-60 sm:h-60 md:w-68 md:h-68 lg:w-76 lg:h-76 max-w-full aspect-square object-contain rounded-full mx-auto drop-shadow-[0_0_18px_rgba(201,162,74,0.32)] drop-shadow-[0_15px_35px_rgba(0,0,0,0.85)] select-none transition-transform duration-500 hover:scale-105"
+                className="relative z-10 w-48 h-48 min-[400px]:w-52 min-[400px]:h-52 sm:w-60 sm:h-60 md:w-68 md:h-68 lg:w-76 lg:h-76 max-w-full aspect-square object-contain mx-auto drop-shadow-[0_0_18px_rgba(201,162,74,0.32)] drop-shadow-[0_15px_35px_rgba(0,0,0,0.85)] select-none transition-transform duration-500 hover:scale-105"
               />
             </div>
 
@@ -137,17 +137,17 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onNavigate }) => {
           </div>
 
           {/* MAIN TITLES */}
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-4">
             <h1
               id="dai-tiec-am-duong-title"
-              className="font-headline text-[clamp(1.4rem,7vw,5.5rem)] font-black tracking-[0.06em] sm:tracking-[0.12em] text-[#F2EBDD] uppercase leading-none py-1 drop-shadow-[0_4px_35px_rgba(90,11,16,0.75)] drop-shadow-[0_0_25px_rgba(201,162,74,0.2)] whitespace-nowrap max-w-full flex items-center justify-center"
+              className="font-headline text-[clamp(1.35rem,6.4vw,5.5rem)] font-black tracking-[0.05em] sm:tracking-[0.12em] text-[#F2EBDD] uppercase leading-none py-1 drop-shadow-[0_4px_35px_rgba(90,11,16,0.75)] drop-shadow-[0_0_25px_rgba(201,162,74,0.2)] whitespace-nowrap max-w-full flex items-center justify-center"
             >
               ĐẠI TIỆC ÂM DƯƠNG
             </h1>
 
             <div className="flex items-center justify-center gap-2 sm:gap-3 pt-1 whitespace-nowrap">
               <div className="h-[1px] w-4 min-[360px]:w-8 sm:w-24 bg-gradient-to-r from-transparent via-[#C9A24A] to-transparent" />
-              <p className="font-headline text-base sm:text-xl lg:text-2xl text-[#C9A24A] font-semibold tracking-[0.15em] sm:tracking-[0.26em] uppercase whitespace-nowrap">
+              <p className="font-headline text-base sm:text-xl lg:text-2xl text-[#C9A24A] font-semibold tracking-[0.14em] sm:tracking-[0.26em] uppercase whitespace-nowrap">
                 GIAO THOA HAI CÕI
               </p>
               <div className="h-[1px] w-4 min-[360px]:w-8 sm:w-24 bg-gradient-to-l from-transparent via-[#C9A24A] to-transparent" />
@@ -170,15 +170,20 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onNavigate }) => {
               Một đêm. Một lời nguyền. Một câu chuyện chưa bao giờ được kể hết... */}
           <div className="p-4 min-[360px]:p-6 sm:p-8 bg-[#090A0D]/85 border border-[#3A080B] text-center space-y-4 max-w-2xl mx-auto shadow-[0_10px_35px_rgba(0,0,0,0.8)]">
             <p className="font-headline text-sm sm:text-lg text-[#C9A24A] italic tracking-wide">
-              "Một đêm. Một lời nguyền. Một câu chuyện chưa bao giờ được kể hết."
+              <span className="inline-block">"Một đêm. Một lời nguyền.</span>{' '}
+              <span className="inline-block">Một câu chuyện chưa bao giờ được kể hết."</span>
             </p>
 
             <div className="font-editorial text-[#F2EBDD]/90 space-y-2 leading-relaxed">
-              <p className="text-[clamp(0.75rem,3.3vw,1.125rem)] whitespace-nowrap">Có những câu chuyện người ta kể để giải trí.</p>
-              <p className="text-[#F2EBDD] font-bold text-[clamp(0.72rem,3.2vw,1.125rem)] whitespace-nowrap">
-                Có những câu chuyện... chỉ nên nghe khi trời đã tối.
+              <p className="text-[clamp(0.75rem,3.2vw,1.125rem)]">
+                <span className="inline-block">Có những câu chuyện</span>{' '}
+                <span className="inline-block">người ta kể để giải trí.</span>
               </p>
-              <p className="text-xs min-[360px]:text-sm sm:text-base text-[#F2EBDD]/80 pt-2 font-body">
+              <p className="text-[#F2EBDD] font-bold text-[clamp(0.72rem,3.1vw,1.125rem)]">
+                <span className="inline-block">Có những câu chuyện...</span>{' '}
+                <span className="inline-block">chỉ nên nghe khi trời đã tối.</span>
+              </p>
+              <p className="text-xs min-[360px]:text-sm sm:text-base text-[#F2EBDD]/80 pt-2 font-body [text-wrap:pretty]">
                 Đêm nay, những truyền thuyết dân gian Việt Nam sẽ không còn nằm trong những trang sách cũ. Chúng sẽ bước ra khỏi bóng tối, xuất hiện ngay trước mắt bạn và đưa bạn vào một đêm Halloween mà bạn sẽ không dễ dàng quên.
               </p>
             </div>

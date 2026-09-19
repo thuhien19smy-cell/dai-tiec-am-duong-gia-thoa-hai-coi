@@ -55,10 +55,8 @@ export const CulturalFusionSection: React.FC = () => {
             <span className="shrink-0">GIA CHỦ</span>
           </h2>
 
-          <p className="font-editorial italic text-[clamp(0.72rem,2.4vw,1.1rem)] text-[#F2EBDD]/85 max-w-2xl mx-auto leading-relaxed text-center">
-            <span className="block whitespace-nowrap">"Khi văn hóa phương Tây bước vào một không gian đậm hồn Việt,</span>
-            <span className="block whitespace-nowrap">đó không phải sự đối đầu hay thay thế —</span>
-            <span className="block whitespace-nowrap">mà là cuộc tao ngộ đầy nghệ thuật giữa hai bờ cõi."</span>
+          <p className="font-editorial italic text-xs min-[360px]:text-sm sm:text-base text-[#F2EBDD]/85 max-w-2xl mx-auto leading-relaxed text-center [text-wrap:balance]">
+            "Khi văn hóa phương Tây bước vào một không gian đậm hồn Việt, đó không phải sự đối đầu hay thay thế — mà là cuộc tao ngộ đầy nghệ thuật giữa hai bờ cõi."
           </p>
 
           <CloudBorderTrim className="max-w-xs mx-auto opacity-70" />
@@ -316,11 +314,11 @@ export const CulturalFusionSection: React.FC = () => {
             </h3>
 
             {/* Narrative Passage */}
-            <div className="space-y-2 sm:space-y-3 font-editorial text-[clamp(0.68rem,2.8vw,1.35rem)] sm:text-xl lg:text-2xl text-[#F2EBDD]/90 max-w-3xl mx-auto leading-relaxed">
-              <p className="whitespace-nowrap">Halloween bước vào một không gian văn hóa Việt Nam.</p>
-              <p className="whitespace-nowrap">Những yếu tố phương Tây không thay thế văn hóa bản địa.</p>
-              <p className="text-[#F2EBDD] font-bold whitespace-nowrap">Chúng trở thành Vị khách.</p>
-              <p className="text-[#C9A24A] font-bold whitespace-nowrap">Còn văn hóa Việt Nam chính là Gia chủ.</p>
+            <div className="space-y-2 sm:space-y-3 font-editorial text-xs min-[360px]:text-sm sm:text-lg lg:text-2xl text-[#F2EBDD]/90 max-w-3xl mx-auto leading-relaxed [text-wrap:balance]">
+              <p>Halloween bước vào một không gian văn hóa Việt Nam.</p>
+              <p>Những yếu tố phương Tây không thay thế văn hóa bản địa.</p>
+              <p className="text-[#F2EBDD] font-bold">Chúng trở thành Vị khách.</p>
+              <p className="text-[#C9A24A] font-bold">Còn văn hóa Việt Nam chính là Gia chủ.</p>
             </div>
 
             {/* Button to open ancient door transition */}
